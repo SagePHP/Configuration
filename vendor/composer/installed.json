@@ -1,0 +1,92 @@
+[
+    {
+        "name": "sagephp/ini",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/SagePHP/ini.git",
+            "reference": "a59b8ff4faefcd6868d736c40187a554e66ce4b3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/SagePHP/ini/zipball/a59b8ff4faefcd6868d736c40187a554e66ce4b3",
+            "reference": "a59b8ff4faefcd6868d736c40187a554e66ce4b3",
+            "shasum": ""
+        },
+        "require-dev": {
+            "symfony/class-loader": "*"
+        },
+        "time": "2013-11-15 21:30:52",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nuno Costa",
+                "email": "nuno@francodacosta.com",
+                "homepage": "http://www.francodacosta.com"
+            }
+        ],
+        "description": "Ini file manipulation. supports sections and comments",
+        "keywords": [
+            "configuration",
+            "ini",
+            "ini file",
+            "parser",
+            "php"
+        ]
+    },
+    {
+        "name": "sagephp/filesystem",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/SagePHP/Filesystem.git",
+            "reference": "c159be269a12c677466ae21878537a9bfb5d07c3"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/SagePHP/Filesystem/zipball/c159be269a12c677466ae21878537a9bfb5d07c3",
+            "reference": "c159be269a12c677466ae21878537a9bfb5d07c3",
+            "shasum": ""
+        },
+        "time": "2013-11-16 21:22:30",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "SagePHP": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Nuno Costa",
+                "email": "nuno@francodacosta.com",
+                "homepage": "http://www.francodacosta.com"
+            }
+        ],
+        "description": "abstractions for common filesystem operations",
+        "homepage": "https://github.com/SagePHP",
+        "keywords": [
+            "file",
+            "filesystem",
+            "folder",
+            "linux",
+            "sytem"
+        ]
+    }
+]

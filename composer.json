@@ -1,0 +1,24 @@
+{
+    "name": "sagephp/configuration",
+    "type": "library",
+    "description": "abstractions for several system configuration files",
+    "keywords": ["sytem", "linux", "service", "configuration"],
+    "homepage": "https://github.com/SagePHP",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nuno Costa",
+            "email": "nuno@francodacosta.com",
+            "homepage": "http://www.francodacosta.com"
+        }
+    ],
+    "require": {
+        "sagephp/ini"       : "dev-master",
+        "sagephp/filesystem": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "SagePHP": "src/"
+        }
+    }
+}

@@ -1,0 +1,112 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "2049a5af52298bac3b199399a8c32c9c",
+    "packages": [
+        {
+            "name": "sagephp/filesystem",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SagePHP/Filesystem.git",
+                "reference": "c159be269a12c677466ae21878537a9bfb5d07c3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SagePHP/Filesystem/zipball/c159be269a12c677466ae21878537a9bfb5d07c3",
+                "reference": "c159be269a12c677466ae21878537a9bfb5d07c3",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "SagePHP": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nuno Costa",
+                    "email": "nuno@francodacosta.com",
+                    "homepage": "http://www.francodacosta.com"
+                }
+            ],
+            "description": "abstractions for common filesystem operations",
+            "homepage": "https://github.com/SagePHP",
+            "keywords": [
+                "file",
+                "filesystem",
+                "folder",
+                "linux",
+                "sytem"
+            ],
+            "time": "2013-11-16 21:22:30"
+        },
+        {
+            "name": "sagephp/ini",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SagePHP/ini.git",
+                "reference": "a59b8ff4faefcd6868d736c40187a554e66ce4b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SagePHP/ini/zipball/a59b8ff4faefcd6868d736c40187a554e66ce4b3",
+                "reference": "a59b8ff4faefcd6868d736c40187a554e66ce4b3",
+                "shasum": ""
+            },
+            "require-dev": {
+                "symfony/class-loader": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nuno Costa",
+                    "email": "nuno@francodacosta.com",
+                    "homepage": "http://www.francodacosta.com"
+                }
+            ],
+            "description": "Ini file manipulation. supports sections and comments",
+            "keywords": [
+                "configuration",
+                "ini",
+                "ini file",
+                "parser",
+                "php"
+            ],
+            "time": "2013-11-15 21:30:52"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "sagephp/ini": 20,
+        "sagephp/filesystem": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}
