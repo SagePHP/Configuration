@@ -54,8 +54,8 @@ class HostsFile
         $hosts = $parts;
 
         $this->ips[$ip] = $hosts;
-        foreach($hosts as $host) {
-            $this->hosts[$host] = $ip;
+        foreach ($hosts as $host) {
+            $this->hosts[$host][] = $ip;
         }
     }
 
@@ -103,6 +103,20 @@ class HostsFile
         $this->processFile($this->getFile());
 
         return array_key_exists($ip, $this->ips);
+    }
+
+    /**
+     * returns True if the $host has $ip
+     *
+     * @param  string  $ip
+     * @param  string  $host
+     *
+     * @return boolean
+     */
+    public function has($ip, $host)
+    {
+        $this->processFile($this->getFile());
+        return in_array($ip, $this->hosts[$host]);
     }
 
     /**
@@ -158,10 +172,11 @@ class HostsFile
      */
     public function removeHost($host)
     {
-        $ip = $this->getIp($host);
-
+        $ips = $this->getIp($host);
         unset($this->hosts[$host]);
-        unset($this->ips[$ip][$host]);
+        foreach ($ips as $ip) {
+            unset($this->ips[$ip][$host]);
+        }
     }
 
     /**
@@ -178,7 +193,6 @@ class HostsFile
             unset($this->hosts[$host]);
          }
     }
-
 
     /**
      * Gets the path to hosts file.
@@ -200,6 +214,7 @@ class HostsFile
     public function setFile($file)
     {
         $this->file = $file;
+        $this->loaded = false;
 
         return $this;
     }
@@ -231,5 +246,10 @@ class HostsFile
     public function __toString()
     {
         return $this->testContent();
+    }
+
+    public function save()
+    {
+        file_put_contents($this->getFile(), $this->getContent());
     }
 }

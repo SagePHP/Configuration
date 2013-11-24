@@ -35,7 +35,8 @@ class HostsFileTest extends \PHPUnit_Framework_TestCase
 
     public function testGetIp()
     {
-        $this->assertEquals('1.1.1.1',  $this->hosts->getIp('host1'));
+        $this->assertEquals(array('1.1.1.1'),  $this->hosts->getIp('host1'));
+        $this->assertEquals(array('127.0.0.1', '::1'),  $this->hosts->getIp('localhost'));
     }
 
     public function testAdd()
@@ -50,6 +51,12 @@ class HostsFileTest extends \PHPUnit_Framework_TestCase
 
         $this->assertTrue($this->hosts->hasIp($ip));
         $this->assertTrue($this->hosts->hasHost($host));
+    }
+
+    public function testHas()
+    {
+        $this->assertTrue($this->hosts->has('127.0.0.1', 'localhost'));
+        $this->assertTrue($this->hosts->has('::1', 'localhost'));
     }
 
     public function testRemoveHost()
