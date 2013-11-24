@@ -14,7 +14,7 @@ class PhpIni
     /**
      * maps a section computed from a key with its real section name.
      * Thank you PHP for beeing so fucking coherent, how hard can it be to make the sections all according to the same rules
-     * why the fuck soap.xxxx is in the soap section but mssql.xxx is in the MSSQL sectio ans assert.xxx is in the Assertion
+     * why the fuck soap.xxxx is in the soap section but mssql.xxx is in the MSSQL section ans assert.xxx is in the Assertion
      * FUCK YOU PHP!!!!
      *
      * @var array
